@@ -60,11 +60,11 @@ tr, td {
 }
 
 .logoImg {
-	width: 200px;
+	width: 180px;
 }
 
 .logoDiv {
-		text-align: center;
+	text-align: center;
 }
 
 .navbar-nav a:link { color: #FEF7EC; }
@@ -73,8 +73,52 @@ tr, td {
 .navbar-nav a:active { color: red; }
 
 .sign{
-		text-align:center;
-		padding: 20px;
+	text-align:center;
+	padding: 20px;
 }
 
+label{
+	text-align: center;
+	position: relative;
+}
 
+input[type ="text"]:focus{
+	border: none;
+	width: 400px;
+	height: 50px;
+	padding: 16px;
+}
+
+.a1{
+	font-family: 'STRTSHT', sans-serif;
+	position: absolute;
+	top: 0;
+	bottom:0;
+	background-color: black;
+	color:white;
+	padding: 16px:;
+	letter-spacing: 2px;
+	text-transform: uppercase;	
+	border: none;
+	cursor: pointer;
+}
+
+.a1:hover{
+	transition: .8s;
+}
+
+button{
+	font-family: 'STRTSHT', sans-serif;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;	
+}
+
+.eventImg{
+	width: 500px;
+}
+
+.a3{
+	color:white;
+	text-decoration:none;
+}
