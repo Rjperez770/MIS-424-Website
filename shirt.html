@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="https://fonts.cdnfonts.com/css/graffiti-font" rel="stylesheet">
+		<link href="https://fonts.cdnfonts.com/css/strtsht" rel="stylesheet">
+		<link rel="stylesheet" href="MIS 424/MODULE 2/xzoom.min.css">
+		<title>Zekro Collective</title>
+		<link rel="shortcut icon" type="x-icon" href="zekro.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css", "shop.html","event.html", "follow.html", "about.html","shirt.html">
+	</head>
+	<body>
+	<div class="container">
+		<header>
+			<img src="zekro gif.gif" length="200" width="200" style="float: right">
+			<img src="zekro gif.gif" length="200" width="200" style="float: left">
+			<a href ="index.html" class ="a3"><h1>Zekro Collective</h1></a>
+		</header>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+				<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="navbar-nav">
+					<a href ="index.html" href="#" class="nav-item nav-link active sign">Home</a>
+					<a href = "shop.html" href="#"  class="nav-item nav-link sign">Shop</a>
+					<a href ="event.html" href="#" class="nav-item nav-link sign">Events</a>
+					<a href ="follow.html" href="#" class="nav-item nav-link sign">Follow Us</a>
+					<a href ="about.html" href="#" class="nav-item nav-link sign">About</a>
+					<a href="cart.html" href="#" class="nav-item nav-link" style ="float: right">
+					<img src="Zekro cart.png" length="35" width="35">
+					Cart
+					</a>
+					<a href="login.html" href="#" class="nav-item nav-link" style ="float: right">
+					<img src="login.png" length="30" width="30">
+					Login
+					</a>
+				</div>
+				</div>
+				</div> 
+			</nav>
+		<main>
+			<h2>The Star Collection Tee</h2>
+			<div class ="h2size">
+				<h2>Sizes</h2>
+			</div>
+			<aside class="sizebutton">
+				<div class= "btns">
+				<button style="background-color:black;color: white; border-radius:5px; font-family: Georgia, serif;" type="button" type="button">L</button>
+				</div>
+				<div class= "btns">
+				<button style="background-color:black;color: white; border-radius:5px; font-family: Georgia, serif;" type="button" type="button">M</button>
+				</div>
+				<div class= "btns">
+				<button style="background-color:black;color: white; border-radius:5px; font-family: Georgia, serif;" type="button" type="button">S</button>
+				</div>
+				<div class= "btns">
+				<button style="background-color:black;color: white; border-radius:5px; font-family: Georgia, serif;" type="button" type="button">3XL</button>
+				</div>
+				<div class= "btns">
+				<button style="background-color:black;color: white; border-radius:5px; font-family: Georgia, serif;" type="button" type="button">2XL</button>
+				</div>
+				<div class= "btns">
+				<button style="background-color:black;color: white; border-radius:5px; font-family: Georgia, serif;" type="button" type="button">XL</button>
+				</div>
+			</aside>
+			<div class="btns2">
+				<button style="background-color:black;color: white; border-radius:5px; font-family: Georgia, serif;" type="button">
+					<img src="Zekro cart.png" length="25" width="25">
+					Add to Cart
+					</button>
+			</div>
+			<div class="zlist">
+				<ul>
+					<li>Runs true to size</li>
+					<li>Size up for oversize</li>
+					<li>100% cotton</li>
+				</ul>
+			</div>
+			<div class="Quan">
+				<span class="minus">-</span>
+				<span class="num">01</span>
+				<span class="plus">+</span>
+			</div>
+			<script>
+				const plus = document.querySelector(".plus"),
+					minus = document.querySelector(".minus"),
+					num = document.querySelector(".num");
+					
+					let a = 1;
+					
+					plus.addEventListener("click", ()=>{
+					a++ 
+					a = (a < 10) ? + a : a;
+					num.innerText = a;
+					console.log(a)
+					});
+					
+					minus.addEventListener("click", ()=>{
+					if (a>1) {
+					a--;
+					a = (a < 10) ? "0" + a : a;
+					num.innerText = a;
+					}
+					});
+					
+			</script>
+			<section class="xzoom_part">
+				<div class ="row">
+					<div class ="col-md-6 col-sm-12">
+						<div class ="xzoom_container">
+							<img src="zekro 2.png" alt="" class="xzoom" id="xzoom-default">
+							<div class="xzoom-thumbs">
+								<a href ="zekro 2.png">
+									<img src="zekro 2.png" alt="" class="xzoom_gallery" width ="80px" xpreview="zekro 2.png">
+								</a>
+							</div>
+						</div>
+					<div>
+				<div>
+			</section>
+		</main>
+		<footer class = "footer mt-auto py-3 fix-bottom bg-dark navbar-dark text-light ">
+			<div class ="container">
+				<div class="row">
+					<div class="col">
+						Copy &copy; 2023. All Rights Reserved.
+					</div>
+					<div class="col-md-6 text-end">
+						<i class="bi bi-facebook text-light h3 px-2"></i>
+						<i class="bi bi-instagram text-light h3 px-2"></i>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	</body>
+</html>
